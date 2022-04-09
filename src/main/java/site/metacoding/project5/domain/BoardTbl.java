@@ -2,6 +2,7 @@ package site.metacoding.project5.domain;
 
 import java.time.LocalDateTime;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.EntityListeners;
 import javax.persistence.GeneratedValue;
@@ -24,7 +25,11 @@ public class BoardTbl {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
+
+    @Column(length = 300, nullable = false)
     private String title;
+
+    @Column(nullable = false)
     private String content;
 
     @CreatedDate
