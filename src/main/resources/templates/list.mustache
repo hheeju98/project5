@@ -184,12 +184,15 @@
         return `<div class="card mb-3">
             <div class="card-body">
                 <h4 class="card-title">${post.title}</h4>
-                <a href="/post/${post.id}" class="btn btn-secondary">상세보기</a>
+                <p class="card-title">${post.content}</p>
+                <p class="card-title">${post.createDate}</p>
+                <p class="card-title">${post.id}</p>
+              
             </div>
         </div>`;
     }
 
-    // loading();
+    loading();
 </script>
 
 </html>

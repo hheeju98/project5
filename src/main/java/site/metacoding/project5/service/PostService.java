@@ -23,7 +23,4 @@ public class PostService {
         return postRepository.findAll(pq);
     }
 
-    public List<Post> 검색(String keyword) {
-        List<Post> posts = postRepository.mSearch(keyword);
-    }
 }

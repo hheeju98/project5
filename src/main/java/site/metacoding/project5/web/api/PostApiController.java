@@ -30,7 +30,7 @@ public class PostApiController {
     // 검색
     @GetMapping("/api/search")
     public ResponseDto<?> search(@RequestParam(defaultValue = "") String keyword) {
-        List<Post> posts = postService.검색(keyword);
+        List<Post> posts = postRepository.mSearch(keyword);
         return new ResponseDto<>(1, "성공", posts);
     }
 }
