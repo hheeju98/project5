@@ -1,4 +1,4 @@
-package site.metacoding.project5.domain;
+package site.metacoding.project5.domain.post;
 
 import java.time.LocalDateTime;
 
@@ -21,7 +21,7 @@ import lombok.NoArgsConstructor;
 @Data
 @Entity
 @EntityListeners(AuditingEntityListener.class)
-public class BoardTbl {
+public class Post {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
